@@ -14,8 +14,8 @@ namespace quill
 /***/
 char const* to_string(LogLevel log_level)
 {
-  constexpr std::array<char const*, 10> log_levels_map = {{"TraceL3", "TraceL2", "TraceL1", "Debug",
-                                                           "Info", "Warning", "Error", "Critical",
+  constexpr std::array<char const*, 10> log_levels_map = {{"TraceL3", "TraceL2", "trace", "debug",
+                                                           "info", "warn", "error", "fatal",
                                                            "Backtrace", "None"}};
 
   using log_lvl_t = std::underlying_type<LogLevel>::type;
