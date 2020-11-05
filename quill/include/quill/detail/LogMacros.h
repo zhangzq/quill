@@ -28,6 +28,7 @@
 #define QUILL_COPY_LOGGABLE using copy_loggable = std::true_type
 
 // Main Log Macros
+// check_format(FMT_STRING(fmt), ##__VA_ARGS__);                                                                                                    \
 
 #if defined(QUILL_NOFN_MACROS)
 // clang-format off
