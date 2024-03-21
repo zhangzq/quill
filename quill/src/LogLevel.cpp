@@ -14,8 +14,8 @@ namespace quill
 std::string_view loglevel_to_string(LogLevel log_level)
 {
   static constexpr std::array<std::string_view, 11> log_levels_map = {
-    {"TRACE_L3", "TRACE_L2", "TRACE_L1", "DEBUG", "INFO", "WARNING", "ERROR", "CRITICAL",
-     "BACKTRACE", "NONE", "DYNAMIC"}};
+      {"ALL", "DETAIL", "TRACE", "DEBUG", "INFO", "WARNING", "ERROR", "FATAL",
+      "BACKTRACE", "NONE", "DYNAMIC"}};
 
   using log_lvl_t = std::underlying_type_t<LogLevel>;
   auto const log_lvl = static_cast<log_lvl_t>(log_level);
